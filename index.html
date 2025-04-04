@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!--FONTE TOTAL-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    <title>Busca Cep</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!--FONTE DO TÍTULO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Lista de tarefas</title>
 </head>
-
 <body>
-    <div class="container-subprincipal">
-        <h2 class="titulo">Pesquisa Cep</h2>
+
+    
+<div class="main">
+    <h1 id="titulo" >Tarefas do dia</h1>
+    <hr>
+    <input type="text" id="input-tarefa" placeholder="Digite a tarefa">
+    <button id="button" ><img src="https://www.svgrepo.com/show/475239/add-to.svg" alt=""></button>
+    <div id="lista" >
+
     </div>
-
-    <div class="caixa-principal">
-        <input id="cep" type="text" placeholder=" Digite seu Cep">
-        <h2 id="endereco">° Endereço:</h2>
-        <h2 id="bairro">° Bairro:</h2>
-        <h2 id="cidade">° Cidade:</h2>
-        <h2 id="estado">° Estado:</h2>
-        <h2 id="regiao">° Região:</h2>
-        <input onclick="ColetarCep()" type="button" class="button" value="Buscar">
-    </div>
-    <script src="main.js"></script>
+</div>
 
 
+<script src="/main.js"></script>    
 </body>
-
 </html>

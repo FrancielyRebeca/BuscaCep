@@ -1,24 +1,22 @@
-function ColetarCep() {
-    let cep = document.querySelector("#cep").value
-    console.log(cep)
-    Dados(cep)
-}
+//getElementById: mesma função do queselect
+let botao = document.getElementById("button")
+let tarefa = document.getElementById("input-tarefa")
+let lista = document.getElementById("lista")
 
-// https://viacep.com.br/ws/49108-183/json/
-// toda vez que misturar código com texto em JAVA: (``)
-// fetch: é uma função específica para acessar url de qualquer lugar.
+//ESSA FUNÇÃO FICA SEMPRE ATIVA
 
-async function Dados(cep) {
-    let dados =  await fetch(`https://viacep.com.br/ws/${cep}/json/`).then(Response => Response.json())
-    console.log(dados)
-    telaDados(dados)
-}
+botao.addEventListener("click", function(){
+    let paragrafo = document.createElement("p")
+    paragrafo.innerHTML = tarefa.value
+    //classList: chamar classe
+    paragrafo.classList.add("estilo-paragrafo")
+    lista.appendChild(paragrafo)
 
-function telaDados(dados) {
-    document.querySelector("#endereco").innerHTML = "° Endereço: " + dados.logradouro
-    document.querySelector("#bairro").innerHTML = " ° Bairro: " + dados.bairro
-    document.querySelector("#cidade").innerHTML = "° Cidade: " + dados.localidade
-    document.querySelector("#estado").innerHTML = "° Estado: " + dados.estado
-    document.querySelector("#regiao").innerHTML = "° Região: " + dados.regiao
-}
+    paragrafo.addEventListener("click", function(){
+        paragrafo.style.textDecoration = "line-through"
+    })
 
+    paragrafo.addEventListener("dblclick", function(){
+        lista.removeChild(paragrafo)
+    })
+})
