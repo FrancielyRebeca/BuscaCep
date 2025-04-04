@@ -1,77 +1,69 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/*ALTERAÇÃO DE TODO O SITE*/
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /*altura do corpo*/
+    width: 100vw; /*largura do corpo*/
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(255,252,117);
-    background: radial-gradient(circle, rgba(255,252,117,1) 0%, rgba(255,213,70,1) 18%, rgba(253,104,104,1) 100%);
-    border-style: ridge;
-    border-color: black;
-
+    justify-content: center; /*alinha os itens flexíveis*/
+    align-items: center; /*alinha os itens*/
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color: #68902b; 
+/* OBS: background modificam o plano de fundo do projeto*/
+}
+ 
+/*ALTERAÇÃO DA CAIXA QUE ESTA COM OS PRINCIPAIS ITENS*/
+.caixa-principal {
+    background-color: #e0f19c; /*cor de fundo*/
+    opacity: 0.9; /*opacidade*/
+    color: whitesmoke; /*cor dos textos*/
+    padding: 0.8%; /*alcochoamento: aumenta o tamanho do plano de fundo da caixa*/
+    border-radius: 0.9%; /*raio da borda*/
+    margin-top: 0.9%; /*margem-superior: meche com a altura, quanto maior for o número, mais para baixo ele ficará*/
+    margin-right: 22%; /*margem direita: quanto maior for o número, mais para a direita ele vai*/   
 }
 
-.main {
-    border-style: double;
-    border-radius: 15px;
-    background: rgb(255,252,117);
-    background: radial-gradient(circle, rgba(255,252,117,1) 0%, rgba(255,213,70,1) 18%, rgba(253,104,104,1) 100%);
-    padding: 10px;
+/*ALTERAÇÃO DO TÍTULO DO SITE*/
+.titulo {
+    margin-bottom: 150%; /*margem iferior: quanto maior for o número, mais para cima o título vai*/
+    margin-left: 0.9%; /*margem-esquerda: meche com a lateral direita do título, quanto maior o número mais para a direita ele vai*/
+    font-size: 43px; /*tamanho da fonte*/    
+    color: #e0f19c; /*cor do texto*/
 }
 
-#titulo {
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    margin-left: 31px; 
-    font-size: 50px
-
-}
-
-button{
-    background-color: transparent;
-    border: none;
-
-}
-
-img {
-    height: 35px;
-    width: 32px;
-    
-    border-radius: 10px;
-    
-}
-
-#input-tarefa {
-   width: 400px; 
-   font-size: 25px;
-   border-radius: 5px;
-   border-style: inset;
-   border-color: white;
-   outline: none;
-   float: left;
-}
-
-
-
-hr {
-    margin-top: 45px;
+/*ALTERAÇÃO DA BARRA DE PESQUISA*/
+#cep {
+    margin-top: 10px;
+    margin-right: 200px; /*margem-direita: meche com o lado direito da barra de pesquisa, alterou tbm o lado direito de toda a caixa*/
+    margin-left: 17%;
+    border-radius: 5px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*tipo de fonte*/
+    font-size: 30px; 
     border-style: hidden;
 }
 
-.estilo-paragrafo {
-    margin-top: 20px;
-    font-size: 30px;
-    cursor: pointer;
+/*ALTERAÇÃO DO RESTANTE DOS TEXTOS DETERMINADOS COMO h2*/   
+h2 {
+    margin-top: 20px; /*margem-superior*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #68902b;
 }
+
+/*ALTERAÇÃO DO BOTÃO*/
+.button {
+    background-color: #7cc644;
+    margin-top: 10px;
+    margin-left: 40%;
+    color: rgb(105, 103, 103);
+    font-size: 25px;
+    border-style: hidden; /*o botão não terá borda*/
+    border-radius: 15%;
+    /*color: white;*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
